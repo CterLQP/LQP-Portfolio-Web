@@ -76,11 +76,11 @@ export default function Home() {
     setChatInput("");
     setIsTyping(true);
 
-    const systemInstruction = \`You are a helpful AI assistant for Le Quy Phat (Titus Le). 
+    const systemInstruction = `You are a helpful AI assistant for Le Quy Phat (Titus Le). 
     Use the following information about Titus to answer visitor questions. 
     CRITICAL INSTRUCTION: Keep your response extremely concise (maximum 1 short paragraph). Avoid long greetings or unnecessary pleasantries. Just answer the question directly.
     If you don't know the answer based on the provided context, suggest they contact Titus directly via email or LinkedIn.
-    CONTEXT: \${titusData}\`;
+    CONTEXT: ${titusData}`;
 
     try {
       const res = await fetch("/api/chat", {
@@ -158,9 +158,9 @@ export default function Home() {
           </ul>
           <div style={{ display: "flex", alignItems: "center" }}>
             <div className="lang-switcher">
-              <button className={\`lang-btn \${lang === 'en' ? 'active' : ''}\`} onClick={() => changeLang('en')}>EN</button>
+              <button className={`lang-btn ${lang === 'en' ? 'active' : ''}`} onClick={() => changeLang('en')}>EN</button>
               <span style={{ color: "var(--border)", margin: "0 5px" }}>|</span>
-              <button className={\`lang-btn \${lang === 'vi' ? 'active' : ''}\`} onClick={() => changeLang('vi')}>VI</button>
+              <button className={`lang-btn ${lang === 'vi' ? 'active' : ''}`} onClick={() => changeLang('vi')}>VI</button>
             </div>
             <div className="mobile-menu-btn" style={{ marginLeft: "20px" }} onClick={() => setMenuOpen(!menuOpen)}>
               <i className="fa-solid fa-bars"></i>
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <button className={\`scroll-top-btn \${showScrollTop ? 'visible' : ''}\`} onClick={scrollToTop} title="Go to top">
+      <button className={`scroll-top-btn ${showScrollTop ? 'visible' : ''}`} onClick={scrollToTop} title="Go to top">
         <i className="fa-solid fa-arrow-up"></i>
       </button>
 
@@ -196,8 +196,8 @@ export default function Home() {
               <button className="switch-photo-btn" onClick={toggleHeroImage} title="Change Photo">
                 <i className="fa-solid fa-camera-rotate"></i>
               </button>
-              <img id="hero-img-1" src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1772872351/LQP/Titus_crbuaj.jpg" alt="Le Quy Phat Main" className={\`hero-img \${heroImgIdx === 1 ? 'active' : ''}\`} loading="eager" onClick={(e) => e.target.classList.toggle('revealed')} />
-              <img id="hero-img-2" src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1761701714/samples/LeQuyPhat_DA_rd9ufj.png" alt="Le Quy Phat Alt" className={\`hero-img \${heroImgIdx === 2 ? 'active' : ''}\`} loading="lazy" onClick={(e) => e.target.classList.toggle('revealed')} />
+              <img id="hero-img-1" src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1772872351/LQP/Titus_crbuaj.jpg" alt="Le Quy Phat Main" className={`hero-img ${heroImgIdx === 1 ? 'active' : ''}`} loading="eager" onClick={(e) => e.target.classList.toggle('revealed')} />
+              <img id="hero-img-2" src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1761701714/samples/LeQuyPhat_DA_rd9ufj.png" alt="Le Quy Phat Alt" className={`hero-img ${heroImgIdx === 2 ? 'active' : ''}`} loading="lazy" onClick={(e) => e.target.classList.toggle('revealed')} />
             </div>
             
             <div className="hero-quote" id="secret-trigger" onClick={handleQuoteClick}>
@@ -551,8 +551,8 @@ export default function Home() {
       </footer>
 
       {/* Modals */}
-      <div id="modal-overlay" className={\`modal-overlay \${activeModal ? 'active' : ''}\`} onClick={handleModalClose}>
-        <div id="desc-project-ghn" className={\`modal-box \${activeModal === 'desc-project-ghn' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+      <div id="modal-overlay" className={`modal-overlay ${activeModal ? 'active' : ''}`} onClick={handleModalClose}>
+        <div id="desc-project-ghn" className={`modal-box ${activeModal === 'desc-project-ghn' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_ghn}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -564,7 +564,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="desc-project-avocado" className={\`modal-box \${activeModal === 'desc-project-avocado' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project-avocado" className={`modal-box ${activeModal === 'desc-project-avocado' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_avocado}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -576,7 +576,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="desc-project-athens" className={\`modal-box \${activeModal === 'desc-project-athens' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project-athens" className={`modal-box ${activeModal === 'desc-project-athens' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_athens}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -588,7 +588,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="desc-project7" className={\`modal-box \${activeModal === 'desc-project7' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project7" className={`modal-box ${activeModal === 'desc-project7' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_p7}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -600,7 +600,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div id="desc-project6" className={\`modal-box \${activeModal === 'desc-project6' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project6" className={`modal-box ${activeModal === 'desc-project6' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_p6}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -612,7 +612,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="desc-project5" className={\`modal-box \${activeModal === 'desc-project5' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project5" className={`modal-box ${activeModal === 'desc-project5' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_p5}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -624,7 +624,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="desc-project4" className={\`modal-box \${activeModal === 'desc-project4' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project4" className={`modal-box ${activeModal === 'desc-project4' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_p4}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -636,7 +636,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="desc-project8" className={\`modal-box \${activeModal === 'desc-project8' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project8" className={`modal-box ${activeModal === 'desc-project8' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_p8}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -648,7 +648,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="desc-project3" className={\`modal-box \${activeModal === 'desc-project3' ? '' : 'hidden'}\`} onClick={e => e.stopPropagation()}>
+        <div id="desc-project3" className={`modal-box ${activeModal === 'desc-project3' ? '' : 'hidden'}`} onClick={e => e.stopPropagation()}>
           <div className="modal-header">
             <span className="modal-title">{t.popup_title_desc_p3}</span>
             <button className="close-modal" onClick={handleModalClose}><i className="fa-solid fa-xmark"></i></button>
@@ -662,7 +662,7 @@ export default function Home() {
       </div>
 
       {/* Easter Egg Overlay */}
-      <div id="easter-egg-overlay" className={\`easter-egg-overlay \${eeActive ? 'active' : ''}\`} onClick={closeEasterEgg}>
+      <div id="easter-egg-overlay" className={`easter-egg-overlay ${eeActive ? 'active' : ''}`} onClick={closeEasterEgg}>
         <div id="easter-egg-text" className="easter-egg-text" style={{ opacity: 1 }}>{eeText}</div>
         <div id="easter-egg-sub" className="easter-egg-sub" style={{ opacity: eeSubVisible ? 1 : 0 }}>(Click anywhere to return)</div>
       </div>
@@ -677,7 +677,7 @@ export default function Home() {
             <path d="M5 16L5.8 17.8L7.6 18.6L5.8 19.4L5 21.2L4.2 19.4L2.4 18.6L4.2 17.8L5 16Z" />
           </svg>
         </button>
-        <div className={\`chat-window \${chatOpen ? 'active' : ''}\`}>
+        <div className={`chat-window ${chatOpen ? 'active' : ''}`}>
           <div className="chat-header">
             <span className="chat-title">
               <i className="fa-solid fa-wand-magic-sparkles"></i> Titus AI Assistant
@@ -686,7 +686,7 @@ export default function Home() {
           </div>
           <div className="chat-messages" id="chat-messages">
             {chatMessages.map((msg, idx) => (
-              <div key={idx} className={\`message \${msg.role === 'user' ? 'user' : 'bot'}\`} dangerouslySetInnerHTML={{ __html: msg.content.replace(/\\*\\*(.*?)\\*\\*/g, '<strong>$1</strong>').replace(/\\n/g, '<br>') }}></div>
+              <div key={idx} className={`message ${msg.role === 'user' ? 'user' : 'bot'}`} dangerouslySetInnerHTML={{ __html: msg.content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>') }}></div>
             ))}
             {isTyping && (
               <div className="message bot typing-indicator">
