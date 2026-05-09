@@ -117,14 +117,15 @@ export default function Home() {
     setEeActive(true);
     setEeText("");
     setEeSubVisible(false);
+    document.body.style.overflow = 'hidden';
 
-    const secretMessage = "Tôi vẫn không thể quên em được, 2N";
+    const secretMessage = "Nho em lam, DH";
     const chars = Array.from(secretMessage);
     let i = 0;
 
     const typeWriter = () => {
       if (i < chars.length) {
-        setEeText(prev => prev + chars[i]);
+        setEeText(secretMessage.substring(0, i + 1));
         i++;
         eeTypeTimeoutRef.current = setTimeout(typeWriter, 120);
       } else {
@@ -137,6 +138,7 @@ export default function Home() {
   const closeEasterEgg = () => {
     setEeActive(false);
     clearTimeout(eeTypeTimeoutRef.current);
+    document.body.style.overflow = '';
     setTimeout(() => {
       setEeText("");
       setEeSubVisible(false);
