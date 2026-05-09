@@ -68,12 +68,13 @@ export default function Home() {
   };
 
   // Chat logic
-  const handleSendMessage = async () => {
-    if (!chatInput.trim()) return;
+  const handleSendMessage = async (textOverride) => {
+    const textToSend = typeof textOverride === 'string' ? textOverride : chatInput;
+    if (!textToSend.trim()) return;
     
-    const newMessages = [...chatMessages, { role: "user", content: chatInput }];
+    const newMessages = [...chatMessages, { role: "user", content: textToSend }];
     setChatMessages(newMessages);
-    setChatInput("");
+    if (typeof textOverride !== 'string') setChatInput("");
     setIsTyping(true);
 
     const systemInstruction = `You are a helpful AI assistant for Le Quy Phat (Titus Le). 
@@ -86,7 +87,7 @@ export default function Home() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: chatInput, systemInstruction })
+        body: JSON.stringify({ message: textToSend, systemInstruction })
       });
       const data = await res.json();
       if (data.error) throw new Error(data.error.message);
@@ -118,8 +119,9 @@ export default function Home() {
     setEeText("");
     setEeSubVisible(false);
     document.body.style.overflow = 'hidden';
-
-    const secretMessage = "Nho em lam, DH";
+    // Secret is obscured to prevent snooping in DevTools
+    const secretCodes = [84, 104, 7853, 116, 32, 107, 104, 243, 32, 273, 7875, 32, 107, 104, 244, 110, 103, 32, 110, 104, 7899, 32, 116, 7899, 105, 32, 101, 109];
+    const secretMessage = String.fromCharCode(...secretCodes);
     const chars = Array.from(secretMessage);
     let i = 0;
 
@@ -693,6 +695,13 @@ export default function Home() {
             {isTyping && (
               <div className="message bot typing-indicator">
                 <span></span><span></span><span></span>
+              </div>
+            )}
+            {chatMessages.length === 1 && !isTyping && (
+              <div className="quick-replies" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '10px', marginLeft: '10px' }}>
+                <button onClick={() => handleSendMessage("What are your core skills?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Core Skills?</button>
+                <button onClick={() => handleSendMessage("Tell me about your experience at GHN.")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Experience at GHN?</button>
+                <button onClick={() => handleSendMessage("How can I contact you?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Contact info?</button>
               </div>
             )}
           </div>
