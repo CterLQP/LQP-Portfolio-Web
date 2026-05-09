@@ -22,6 +22,8 @@ export default function Home() {
   const [eeSubVisible, setEeSubVisible] = useState(false);
   const eeTimerRef = useRef(null);
   const eeTypeTimeoutRef = useRef(null);
+  
+  const [currentSection, setCurrentSection] = useState("about");
 
   const t = translations[lang] || translations["en"];
 
@@ -42,11 +44,25 @@ export default function Home() {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+    // Observer to track which section the user is currently viewing
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.target.id) {
+          setCurrentSection(entry.target.id);
+        }
+      });
+    }, { root: null, rootMargin: '-20% 0px -60% 0px', threshold: 0.1 });
+    
+    document.querySelectorAll('section').forEach(el => sectionObserver.observe(el));
+
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
     };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      sectionObserver.disconnect();
+    };
   }, []);
 
   const changeLang = (l) => {
@@ -81,6 +97,8 @@ export default function Home() {
     Use the following information about Titus to answer visitor questions. 
     CRITICAL INSTRUCTION: Keep your response extremely concise (maximum 1 short paragraph). Avoid long greetings or unnecessary pleasantries. Just answer the question directly.
     If you don't know the answer based on the provided context, suggest they contact Titus directly via email or LinkedIn.
+    CURRENT STATUS: The user is currently viewing the "${currentSection}" section of the portfolio. If they ask a vague question, assume it's related to this section.
+    SUPERPOWER: You can magically control the user's screen! If the user asks to see a section, go to a section, or asks where something is (like "show me your projects", "how to contact you", "where is your experience"), you MUST include the exact string [ACTION:SCROLL_TO_{SECTION}] anywhere in your response. Replace {SECTION} with one of: ABOUT, SKILLS, EXPERIENCE, EDUCATION, PROJECTS, CERTIFICATIONS, CONTACT. For example: "I'd be happy to show you his projects! [ACTION:SCROLL_TO_PROJECTS]"
     CONTEXT: ${titusData}`;
 
     try {
@@ -92,7 +110,17 @@ export default function Home() {
       const data = await res.json();
       if (data.error) throw new Error(data.error.message);
       
-      const botMsg = data.choices[0].message.content;
+      let botMsg = data.choices[0].message.content;
+      
+      // Parse UI Control Actions from AI
+      const actionMatch = botMsg.match(/\[ACTION:SCROLL_TO_([A-Z]+)\]/);
+      if (actionMatch) {
+        const targetId = actionMatch[1].toLowerCase();
+        const el = document.getElementById(targetId);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+        botMsg = botMsg.replace(/\[ACTION:SCROLL_TO_[A-Z]+\]/g, '').trim();
+      }
+
       setChatMessages(prev => [...prev, { role: "bot", content: botMsg }]);
     } catch (error) {
       setChatMessages(prev => [...prev, { role: "bot", content: "⚠️ **System:** Please add your Groq API Key to Vercel Environment Variables as GROQ_API_KEY." }]);
