@@ -259,20 +259,25 @@ export default function Home() {
               <h3 className="skill-cat-title">{t.skills_cat2}</h3>
               <div className="skill-list">
                 <div className="skill-item"><i className="fa-solid fa-chart-line"></i> <span>{t.skill_power_bi}</span></div>
-                <div className="skill-item"><i className="fa-solid fa-chart-pie"></i> <span>{t.skill_locker_studio}</span></div>
-                <div className="skill-item"><i className="fa-solid fa-chart-bar"></i> <span>{t.skill_tableau}</span></div>
+                <div className="skill-item"><i className="fa-solid fa-chart-pie"></i> <span>{t.skill_looker_studio}</span></div>
               </div>
             </div>
             <div className="skill-category reveal">
               <h3 className="skill-cat-title">{t.skills_cat3}</h3>
               <div className="skill-list">
-                <div className="skill-item"><i className="fa-solid fa-brain"></i> <span>{t.skill_ml}</span></div>
-                <div className="skill-item"><i className="fa-solid fa-robot"></i> <span>{t.skill_ai}</span></div>
+                <div className="skill-item"><i className="fa-solid fa-tasks"></i> <span>{t.skill_agile}</span></div>
+                <div className="skill-item"><i className="fa-solid fa-code-branch"></i> <span>{t.skill_sdlc}</span></div>
+                <div className="skill-item"><i className="fa-solid fa-truck-fast"></i> <span>{t.skill_end_to_end}</span></div>
+                <div className="skill-item"><i className="fa-solid fa-arrow-trend-up"></i> <span>{t.skill_process_imp}</span></div>
+                <div className="skill-item"><i className="fa-solid fa-users"></i> <span>{t.skill_stakeholder}</span></div>
               </div>
-              <h3 className="skill-cat-title" style={{ marginTop: '20px' }}>{t.skills_cat4}</h3>
+            </div>
+            <div className="skill-category reveal">
+              <h3 className="skill-cat-title">{t.skills_cat4}</h3>
               <div className="skill-list">
-                 <div className="skill-item"><i className="fa-solid fa-lightbulb"></i> <span>{t.skill_problem_solving}</span></div>
-                 <div className="skill-item"><i className="fa-solid fa-person-chalkboard"></i> <span>{t.skill_presentation}</span></div>
+                <div className="skill-item"><i className="fa-brands fa-jira"></i> <span>{t.skill_jira}</span></div>
+                <div className="skill-item"><i className="fa-brands fa-confluence"></i> <span>{t.skill_confluence}</span></div>
+                <div className="skill-item"><i className="fa-brands fa-google"></i> <span>{t.skill_google_ws}</span></div>
               </div>
             </div>
           </div>
@@ -293,6 +298,7 @@ export default function Home() {
               <ul className="timeline-desc">
                 <li>{t.exp_ghn_desc1}</li>
                 <li>{t.exp_ghn_desc2}</li>
+                {t.exp_ghn_desc3 && <li>{t.exp_ghn_desc3}</li>}
               </ul>
             </div>
             <div className="timeline-item reveal" style={{ transitionDelay: "0.2s" }}>
@@ -302,7 +308,7 @@ export default function Home() {
               <ul className="timeline-desc">
                 <li>{t.exp3_desc1}</li>
                 <li>{t.exp3_desc2}</li>
-                <li>{t.exp3_desc3}</li>
+                {t.exp3_desc3 && <li>{t.exp3_desc3}</li>}
               </ul>
             </div>
             <div className="timeline-item reveal" style={{ transitionDelay: "0.3s" }}>
@@ -311,8 +317,8 @@ export default function Home() {
               <p className="timeline-pos">{t.exp2_position}</p>
               <ul className="timeline-desc">
                 <li>{t.exp2_desc1}</li>
-                <li>{t.exp2_desc2}</li>
-                <li>{t.exp2_desc3}</li>
+                {t.exp2_desc2 && <li>{t.exp2_desc2}</li>}
+                {t.exp2_desc3 && <li>{t.exp2_desc3}</li>}
               </ul>
             </div>
             <div className="timeline-item reveal" style={{ transitionDelay: "0.4s" }}>
@@ -321,7 +327,8 @@ export default function Home() {
               <p className="timeline-pos">{t.exp1_position}</p>
               <ul className="timeline-desc">
                 <li>{t.exp1_desc1}</li>
-                <li>{t.exp1_desc2}</li>
+                {t.exp1_desc2 && <li>{t.exp1_desc2}</li>}
+                {t.exp1_desc3 && <li>{t.exp1_desc3}</li>}
               </ul>
             </div>
           </div>
