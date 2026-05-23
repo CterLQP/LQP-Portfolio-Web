@@ -44,7 +44,7 @@ export const translations = {
       exp_ghn_company: "GHN",
       exp_ghn_position: "Processing & Data Analyst Specialist",
       exp_ghn_desc1: "Led the Employee Engagement Survey project, managing timelines, technical risks, and cross-functional coordination.",
-      exp_ghn_desc2: "Collaborated with Product Owners to evaluate system logic, define success metrics, and ensure quality for the PMS trial.",
+      exp_ghn_desc2: "Collaborated with Product Owners to evaluate system logic, define success metrics, and provide data-driven solutions for multiple cross-functional projects.",
       exp_ghn_desc3: "Analyzed recruitment data from the Bitrix system, centralizing pipelines into BigQuery to optimize dashboard management and delivering weekly/monthly performance reports.",
       
       project_ghn_title: "[Python] HR & Ops Analytics Dashboard",
@@ -185,7 +185,7 @@ export const translations = {
       exp_ghn_company: "GHN",
       exp_ghn_position: "Chuyên viên Phân tích Quy trình và Dữ liệu",
       exp_ghn_desc1: "Dẫn dắt dự án Khảo sát mức độ Gắn kết của Nhân viên, quản lý tiến độ, rủi ro kỹ thuật và phối hợp liên phòng ban.",
-      exp_ghn_desc2: "Hợp tác với các Product Owner để đánh giá logic hệ thống, xác định tiêu chí thành công và đảm bảo chất lượng cho bản thử nghiệm Hệ thống Quản lý Hiệu suất (PMS).",
+      exp_ghn_desc2: "Hợp tác với các Product Owner để đánh giá logic hệ thống, xác định tiêu chí thành công và đưa ra giải pháp dữ liệu cho nhiều dự án đa chức năng khác nhau.",
       exp_ghn_desc3: "Phân tích dữ liệu tuyển dụng từ hệ thống Bitrix, chuyển đổi luồng dữ liệu sang BigQuery để quản lý và tối ưu hóa dashboard, đồng thời báo cáo hiệu suất theo tuần và tháng.",
       
       project_ghn_title: "[Python] Bảng điều khiển Phân tích Nhân sự & Vận hành",
@@ -296,7 +296,7 @@ FAQ:
 Experience:
 1. GHN - Processing & Data Analyst Specialist (Mar 2026 - Present)
    - Led the Employee Engagement Survey project, managed timelines and technical risks.
-   - Collaborated with Product Owners to evaluate system logic and ensure quality for the PMS trial.
+   - Collaborated with Product Owners to evaluate system logic, define success metrics, and provide data-driven solutions for multiple cross-functional projects.
    - Analyzed recruitment data from the Bitrix system, centralizing pipelines into BigQuery to optimize dashboard management and delivering weekly/monthly performance reports.
 
 2. International Data Group Vietnam - Data Analyst (Mar 2025 - Jul 2025)
