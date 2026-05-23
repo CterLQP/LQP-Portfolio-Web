@@ -218,7 +218,7 @@ export default function Home() {
               <a href="#contact" className="btn btn-primary">
                 <i className="fa-solid fa-envelope"></i> <span>{t.dock_contact}</span>
               </a>
-              <a href="https://drive.google.com/file/d/1CaoZJr2v5Ns3YbG7j-GC312UCZXfVoWV/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-outline">
+              <a href="https://docs.google.com/document/d/13ZEpEIBAORKLHrZ_fEKks6hvqNONcPCyxxTmFEvhifU/edit?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-outline">
                 <i className="fa-solid fa-download"></i> <span>{t.project_download_cv}</span>
               </a>
             </div>
