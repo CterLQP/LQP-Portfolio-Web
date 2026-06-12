@@ -709,17 +709,13 @@ export default function Home() {
       {/* Chat Widget */}
       <div className="chat-widget-container">
         {!chatOpen && <div className="chat-tooltip" id="chat-tooltip">{t.dock_chat_tooltip}</div>}
-        <button className="chat-toggle-btn" onClick={() => setChatOpen(!chatOpen)}>
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L14.4 7.6L20 10L14.4 12.4L12 18L9.6 12.4L4 10L9.6 7.6L12 2Z" />
-            <path d="M19 13L20.2 15.8L23 17L20.2 18.2L19 21L17.8 18.2L15 17L17.8 15.8L19 13Z" />
-            <path d="M5 16L5.8 17.8L7.6 18.6L5.8 19.4L5 21.2L4.2 19.4L2.4 18.6L4.2 17.8L5 16Z" />
-          </svg>
+        <button className="chat-toggle-btn" onClick={() => setChatOpen(!chatOpen)} style={{ overflow: 'hidden', padding: '10px' }}>
+          <img src="/dark-angel-logo.png" alt="AI Chat" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />
         </button>
         <div className={`chat-window ${chatOpen ? 'active' : ''}`}>
           <div className="chat-header">
-            <span className="chat-title">
-              <i className="fa-solid fa-wand-magic-sparkles"></i> Titus AI Assistant
+            <span className="chat-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <img src="/dark-angel-logo.png" alt="AI" style={{ width: '20px', height: '20px', objectFit: 'contain', borderRadius: '50%' }} /> Titus AI Assistant
             </span>
             <button className="chat-close" onClick={() => setChatOpen(false)}><i className="fa-solid fa-xmark"></i></button>
           </div>
@@ -735,7 +731,7 @@ export default function Home() {
             {chatMessages.length === 1 && !isTyping && (
               <div className="quick-replies" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '10px', marginLeft: '10px' }}>
                 <button onClick={() => handleSendMessage("What are your core skills?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Core Skills?</button>
-                <button onClick={() => handleSendMessage("Tell me about your experience at GHN.")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Experience at GHN?</button>
+                <button onClick={() => handleSendMessage("Tell me about your experience at Giao Hàng Nhanh.")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Experience at Giao Hàng Nhanh?</button>
                 <button onClick={() => handleSendMessage("How can I contact you?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Contact info?</button>
               </div>
             )}

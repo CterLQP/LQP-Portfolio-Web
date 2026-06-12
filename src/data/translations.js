@@ -41,7 +41,7 @@ export const translations = {
       popup_back_btn: "Back", 
       
       exp_ghn_date: "Mar 2026 - Present",
-      exp_ghn_company: "GHN",
+      exp_ghn_company: "Giao Hàng Nhanh",
       exp_ghn_position: "Processing & Data Analyst Specialist",
       exp_ghn_desc1: "Led the Employee Engagement Survey project, managing timelines, technical risks, and cross-functional coordination.",
       exp_ghn_desc2: "Collaborated with Product Owners to evaluate system logic, define success metrics, and provide data-driven solutions for multiple cross-functional projects.",
@@ -182,7 +182,7 @@ export const translations = {
       popup_back_btn: "Trở lại", 
       
       exp_ghn_date: "Tháng 3 2026 - Hiện tại",
-      exp_ghn_company: "GHN",
+      exp_ghn_company: "Giao Hàng Nhanh",
       exp_ghn_position: "Chuyên viên Phân tích Quy trình và Dữ liệu",
       exp_ghn_desc1: "Dẫn dắt dự án Khảo sát mức độ Gắn kết của Nhân viên, quản lý tiến độ, rủi ro kỹ thuật và phối hợp liên phòng ban.",
       exp_ghn_desc2: "Hợp tác với các Product Owner để đánh giá logic hệ thống, xác định tiêu chí thành công và đưa ra giải pháp dữ liệu cho nhiều dự án đa chức năng khác nhau.",
@@ -287,14 +287,14 @@ Contact: Lequyphat0123@gmail.com | WhatsApp: 0862893442
 Website: lequyphat.wuaze.com
 
 Summary:
-Data Analyst with nearly 2 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh (GHN) as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
+Data Analyst with nearly 2 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
 
 FAQ:
 - How did you gain 2 years of experience while studying?
   I started my career early during my sophomore year (2nd year of university). By balancing flexible work schedules with academic studies and applying classroom knowledge directly to real-world projects at Parsley and IDG, I effectively accumulated nearly 2 years of professional experience before graduation.
 
 Experience:
-1. GHN - Processing & Data Analyst Specialist (Mar 2026 - Present)
+1. Giao Hàng Nhanh - Processing & Data Analyst Specialist (Mar 2026 - Present)
    - Led the Employee Engagement Survey project, managed timelines and technical risks.
    - Collaborated with Product Owners to evaluate system logic, define success metrics, and provide data-driven solutions for multiple cross-functional projects.
    - Analyzed recruitment data from the Bitrix system, centralizing pipelines into BigQuery to optimize dashboard management and delivering weekly/monthly performance reports.
