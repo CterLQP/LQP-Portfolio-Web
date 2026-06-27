@@ -43,9 +43,9 @@ export const translations = {
       exp_ghn_date: "Mar 2026 - Present",
       exp_ghn_company: "Giao Hàng Nhanh",
       exp_ghn_position: "Processing & Data Analyst Specialist",
-      exp_ghn_desc1: "Led the Employee Engagement Survey project, managing timelines, technical risks, and cross-functional coordination.",
-      exp_ghn_desc2: "Collaborated with Product Owners to evaluate system logic, define success metrics, and provide data-driven solutions for multiple cross-functional projects.",
-      exp_ghn_desc3: "Analyzed recruitment data from the Bitrix system, centralizing pipelines into BigQuery to optimize dashboard management and delivering weekly/monthly performance reports.",
+      exp_ghn_desc1: "Implement the Employee Engagement Survey project, collect and analyze data, and provide necessary insights for management.",
+      exp_ghn_desc2: "Improve processes: Analyze recruitment data from the Bitrix system, centralize recruitment processes into BigQuery to optimize dashboard management and provide weekly/monthly performance reports.",
+      exp_ghn_desc3: "",
       
       project_ghn_title: "[Python] HR & Ops Analytics Dashboard",
       tag_ibcs: "IBCS",
@@ -75,24 +75,24 @@ export const translations = {
       tag_ml: "Machine Learning",
       tag_powerbi: "Power BI",
       tag_tkinter: "Tkinter",
-      exp1_date: "Dec 2021 - Feb 2025",
-      exp1_company: "Men Stay Simplicity",
-      exp1_position: "(Part-time) E-commerce Operations",
-      exp1_desc1: "Tracked operational metrics across e-commerce platforms and proactively resolved customer/logistics issues with a high ownership mindset.",
+      exp1_date: "",
+      exp1_company: "",
+      exp1_position: "",
+      exp1_desc1: "",
       exp1_desc2: "",
       exp1_desc3: "",
       exp2_date: "Jul 2023 - Dec 2024",
-      exp2_company: "Men Stay Simplicity",
+      exp2_company: "Parsley JSC",
       exp2_position: "Data Analyst",
-      exp2_desc1: "Managed process improvements by automating ETL workflows, reducing manual efforts and operational blockers.",
-      exp2_desc2: "Built project dashboards (PowerBI/Looker Studio) to track KPIs and facilitated meetings to align cross-departmental data definitions.",
-      exp2_desc3: "",
-      exp3_date: "Mar 2025 - Jul 2025",
+      exp2_desc1: "Standardized multi-source raw data by defining cross-departmental requirements for streamlined reporting.",
+      exp2_desc2: "Automated ETL workflows using Python scripts to support revenue forecasting and customer reach analysis.",
+      exp2_desc3: "Optimized data models for Power BI and Looker Studio dashboards, enhancing query performance and data accuracy.",
+      exp3_date: "Mar 2025 - Dec 2025",
       exp3_company: "International Data Group Vietnam",
       exp3_position: "Data Analyst",
-      exp3_desc1: "Maintained delivery health through structured planning and on-time execution of data collection pipelines for major events.",
-      exp3_desc2: "Developed standardized templates and data validation frameworks, documenting best practices to promote team alignment.",
-      exp3_desc3: "",
+      exp3_desc1: "Managed end-to-end data collection for major events, ensuring data integrity from survey input to final reporting.",
+      exp3_desc2: "Executed data cleansing and validation on large attendee datasets to identify anomalies and optimize analysis accuracy.",
+      exp3_desc3: "Synchronized digital content across platforms to ensure data consistency and accurate event communication flow.",
       edu_school: "Hoa Sen University",
       edu_time: "2021 - 2025",
       edu_degree: "Management Information Systems",
@@ -184,9 +184,9 @@ export const translations = {
       exp_ghn_date: "Tháng 3 2026 - Hiện tại",
       exp_ghn_company: "Giao Hàng Nhanh",
       exp_ghn_position: "Chuyên viên Phân tích Quy trình và Dữ liệu",
-      exp_ghn_desc1: "Dẫn dắt dự án Khảo sát mức độ Gắn kết của Nhân viên, quản lý tiến độ, rủi ro kỹ thuật và phối hợp liên phòng ban.",
-      exp_ghn_desc2: "Hợp tác với các Product Owner để đánh giá logic hệ thống, xác định tiêu chí thành công và đưa ra giải pháp dữ liệu cho nhiều dự án đa chức năng khác nhau.",
-      exp_ghn_desc3: "Phân tích dữ liệu tuyển dụng từ hệ thống Bitrix, chuyển đổi luồng dữ liệu sang BigQuery để quản lý và tối ưu hóa dashboard, đồng thời báo cáo hiệu suất theo tuần và tháng.",
+      exp_ghn_desc1: "Thực hiện dự án Khảo sát mức độ gắn kết của nhân viên, thu thập và phân tích dữ liệu, cung cấp thông tin chi tiết cần thiết cho ban quản lý.",
+      exp_ghn_desc2: "Cải tiến quy trình: Phân tích dữ liệu tuyển dụng từ hệ thống Bitrix, tập trung hóa quy trình tuyển dụng vào BigQuery để tối ưu quản lý dashboard và cung cấp báo cáo hiệu suất hàng tuần/tháng.",
+      exp_ghn_desc3: "",
       
       project_ghn_title: "[Python] Bảng điều khiển Phân tích Nhân sự & Vận hành",
       tag_ibcs: "IBCS",
@@ -216,24 +216,24 @@ export const translations = {
       tag_ml: "Học máy",
       tag_powerbi: "Power BI",
       tag_tkinter: "Tkinter",
-      exp1_date: "Tháng 12 2021 - Tháng 2 2025",
-      exp1_company: "Men Stay Simplicity",
-      exp1_position: "(Bán thời gian) Vận hành Thương mại điện tử",
-      exp1_desc1: "Theo dõi các chỉ số vận hành trên các nền tảng thương mại điện tử và chủ động giải quyết các vấn đề về khách hàng/logistics với tinh thần làm chủ cao.",
+      exp1_date: "",
+      exp1_company: "",
+      exp1_position: "",
+      exp1_desc1: "",
       exp1_desc2: "",
       exp1_desc3: "",
       exp2_date: "Tháng 7 2023 - Tháng 12 2024",
-      exp2_company: "Men Stay Simplicity",
+      exp2_company: "Parsley JSC",
       exp2_position: "Chuyên viên Phân tích Dữ liệu",
-      exp2_desc1: "Quản lý cải tiến quy trình bằng cách tự động hóa các luồng công việc ETL, giảm bớt nỗ lực thủ công và các trở ngại vận hành.",
-      exp2_desc2: "Xây dựng các bảng điều khiển dự án (PowerBI/Looker Studio) để theo dõi KPI và điều phối các cuộc họp để thống nhất định nghĩa dữ liệu liên phòng ban.",
-      exp2_desc3: "",
-      exp3_date: "Tháng 3 2025 - Tháng 7 2025",
+      exp2_desc1: "Chuẩn hóa dữ liệu thô từ nhiều nguồn bằng cách xác định các yêu cầu liên phòng ban để hợp lý hóa việc báo cáo.",
+      exp2_desc2: "Tự động hóa luồng công việc ETL bằng các tập lệnh Python để hỗ trợ dự báo doanh thu và phân tích phạm vi tiếp cận khách hàng.",
+      exp2_desc3: "Tối ưu hóa mô hình dữ liệu cho các dashboard Power BI và Looker Studio, nâng cao hiệu suất truy vấn và độ chính xác của dữ liệu.",
+      exp3_date: "Tháng 3 2025 - Tháng 12 2025",
       exp3_company: "International Data Group Vietnam",
       exp3_position: "Chuyên viên Phân tích Dữ liệu",
-      exp3_desc1: "Duy trì trạng thái giao hàng thông qua việc lập kế hoạch có cấu trúc và thực thi đúng hạn các luồng thu thập dữ liệu cho các sự kiện lớn.",
-      exp3_desc2: "Phát triển các mẫu chuẩn hóa và khung kiểm tra dữ liệu, ghi chép lại các phương pháp tối ưu để thúc đẩy sự thống nhất trong đội nhóm.",
-      exp3_desc3: "",
+      exp3_desc1: "Quản lý việc thu thập dữ liệu từ đầu đến cuối cho các sự kiện lớn, đảm bảo tính toàn vẹn của dữ liệu từ đầu vào khảo sát đến báo cáo cuối cùng.",
+      exp3_desc2: "Thực hiện làm sạch và xác thực dữ liệu trên các tập dữ liệu người tham dự lớn để xác định các điểm bất thường và tối ưu hóa độ chính xác của phân tích.",
+      exp3_desc3: "Đồng bộ hóa nội dung kỹ thuật số trên các nền tảng để đảm bảo tính nhất quán của dữ liệu và luồng giao tiếp sự kiện chính xác.",
       edu_school: "Đại học Hoa Sen",
       edu_time: "2021 - 2025",
       edu_degree: "Hệ thống Thông tin Quản lý",
@@ -294,21 +294,19 @@ FAQ:
   I started my career early during my sophomore year (2nd year of university). By balancing flexible work schedules with academic studies and applying classroom knowledge directly to real-world projects at Parsley and IDG, I effectively accumulated nearly 2 years of professional experience before graduation.
 
 Experience:
-1. Giao Hàng Nhanh - Processing & Data Analyst Specialist (Mar 2026 - Present)
-   - Led the Employee Engagement Survey project, managed timelines and technical risks.
-   - Collaborated with Product Owners to evaluate system logic, define success metrics, and provide data-driven solutions for multiple cross-functional projects.
-   - Analyzed recruitment data from the Bitrix system, centralizing pipelines into BigQuery to optimize dashboard management and delivering weekly/monthly performance reports.
+1. Giao Hang Nhanh JSC - Processing & Data Analyst Specialist (Mar 2026 - Present)
+   - Implement the Employee Engagement Survey project, collect and analyze data, and provide necessary insights for management.
+   - Improve processes: Analyze recruitment data from the Bitrix system, centralize recruitment processes into BigQuery to optimize dashboard management and provide weekly/monthly performance reports.
 
-2. International Data Group Vietnam - Data Analyst (Mar 2025 - Jul 2025)
-   - Maintained delivery health through structured planning of data collection pipelines.
-   - Developed standardized templates and data validation frameworks.
+2. International Data Group Vietnam - Data Analyst (Mar 2025 - Dec 2025)
+   - Managed end-to-end data collection for major events, ensuring data integrity from survey input to final reporting.
+   - Executed data cleansing and validation on large attendee datasets to identify anomalies and optimize analysis accuracy.
+   - Synchronized digital content across platforms to ensure data consistency and accurate event communication flow.
 
-3. Men Stay Simplicity - Data Analyst (Jul 2023 - Dec 2024)
-   - Managed process improvements by automating ETL workflows.
-   - Built project dashboards (PowerBI/Looker Studio) to track KPIs.
-
-4. Men Stay Simplicity - (Part-time) E-commerce Operations (Dec 2021 - Feb 2025)
-   - Tracked operational metrics across e-commerce platforms and resolved customer/logistics issues.
+3. Parsley JSC - Data Analyst (Jul 2023 - Dec 2024)
+   - Standardized multi-source raw data by defining cross-departmental requirements for streamlined reporting.
+   - Automated ETL workflows using Python scripts to support revenue forecasting and customer reach analysis.
+   - Optimized data models for Power BI and Looker Studio dashboards, enhancing query performance and data accuracy.
 
 Skills:
 - Programming & Databases: Python, SQL, HTML/CSS, JavaScript.
