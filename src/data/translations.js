@@ -9,8 +9,8 @@ export const translations = {
       dock_contact: "Contact",
       dock_chat_tooltip: "Ask AI about me! 🤖",
       about_name_main: "Le Quy Phat",
-      about_role: "DATA PROFESSIONAL",
-      about_bio: "Positioning myself as a versatile Data Professional, driven by a dual passion for Data Science and Artificial Intelligence. Transforming raw data into valuable business insights.",
+      about_role: "DATA SPECIALIST",
+      about_bio: "Positioning myself as a versatile Data Specialist, driven by a dual passion for Data Science and Artificial Intelligence. Transforming raw data into valuable business insights.",
       about_quote: '"The little things are your own thoughts, Not your true ability."',
       tab_skills: "Skills",
       tab_projects: "Projects",
@@ -287,7 +287,7 @@ Contact: Lequyphat0123@gmail.com | WhatsApp: 0862893442
 Website: lequyphat.wuaze.com
 
 Summary:
-Data Professional with 4 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
+Data Specialist with 4 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
 
 FAQ:
 - How did you gain 4 years of experience while studying?
