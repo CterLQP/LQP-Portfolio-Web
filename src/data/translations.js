@@ -82,7 +82,7 @@ export const translations = {
       exp1_desc2: "",
       exp1_desc3: "",
       exp2_date: "Dec 2021 - Dec 2024",
-      exp2_company: "Parsley JSC",
+      exp2_company: "Parsley Joint Stock Company",
       exp2_position: "Data Analyst",
       exp2_desc1: "Built and maintained integrated ETL pipelines from 6+ e-commerce platforms, contributing to a 200% revenue growth from 2023 to 2024.",
       exp2_desc2: "Collaborated with Operations, Commercial and Marketing teams to identify cross-departmental data requirements and provide consistent reporting standards.",
@@ -223,7 +223,7 @@ export const translations = {
       exp1_desc2: "",
       exp1_desc3: "",
       exp2_date: "Tháng 12 2021 - Tháng 12 2024",
-      exp2_company: "Parsley JSC",
+      exp2_company: "Parsley Joint Stock Company",
       exp2_position: "Chuyên viên Phân tích Dữ liệu",
       exp2_desc1: "Xây dựng và duy trì luồng dữ liệu ETL tích hợp từ hơn 6 nền tảng thương mại điện tử, góp phần tăng trưởng 200% doanh thu trong năm 2023-2024.",
       exp2_desc2: "Phối hợp với các nhóm Vận hành, Thương mại và Tiếp thị để xác định yêu cầu dữ liệu liên phòng ban và cung cấp tiêu chuẩn báo cáo nhất quán.",
@@ -303,7 +303,7 @@ Experience:
    - Managed data collection and validation for major B2B events, processing datasets of ~70,000 records.
    - Implemented end-to-end data cleaning processes to ensure data integrity.
 
-3. Parsley JSC - Data Analyst (Dec 2021 - Dec 2024)
+3. Parsley Joint Stock Company - Data Analyst (Dec 2021 - Dec 2024)
    - Built integrated ETL pipelines from 6+ e-commerce platforms, contributing to 200% revenue growth (2023-2024).
    - Collaborated with cross-functional teams to identify requirements and provide consistent reporting standards.
    - Optimized Power BI/Looker Studio data models to improve query performance and accuracy.
