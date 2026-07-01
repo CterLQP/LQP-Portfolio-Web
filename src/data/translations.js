@@ -9,8 +9,8 @@ export const translations = {
       dock_contact: "Contact",
       dock_chat_tooltip: "Ask AI about me! 🤖",
       about_name_main: "Le Quy Phat",
-      about_role: "DATA ANALYST",
-      about_bio: "Positioning myself as a Data Analyst, driven by a dual passion for Data Science and Artificial Intelligence. Transforming raw data into valuable business insights.",
+      about_role: "DATA PROFESSIONAL",
+      about_bio: "Positioning myself as a versatile Data Professional, driven by a dual passion for Data Science and Artificial Intelligence. Transforming raw data into valuable business insights.",
       about_quote: '"The little things are your own thoughts, Not your true ability."',
       tab_skills: "Skills",
       tab_projects: "Projects",
@@ -150,8 +150,8 @@ export const translations = {
       dock_contact: "Liên hệ",
       dock_chat_tooltip: "Hỏi AI về tôi! 🤖", 
       about_name_main: "Lê Quý Phát",
-      about_role: "PHÂN TÍCH DỮ LIỆU",
-      about_bio: "Định vị bản thân là chuyên viên Phân tích Dữ liệu, được thúc đẩy bởi niềm đam mê song hành dành cho Khoa học Dữ liệu và Trí tuệ Nhân tạo. Xử lý các dữ liệu thô thành những insight có giá trị cho doanh nghiệp.",
+      about_role: "CHUYÊN VIÊN DỮ LIỆU",
+      about_bio: "Định vị bản thân là một Chuyên viên Dữ liệu đa năng, được thúc đẩy bởi niềm đam mê song hành dành cho Khoa học Dữ liệu và Trí tuệ Nhân tạo. Xử lý các dữ liệu thô thành những insight có giá trị cho doanh nghiệp.",
       about_quote: '"Thứ nhỏ bé chính là suy nghĩ của bạn, Không phải khả năng thật sự của bạn."',
       tab_skills: "Kỹ năng",
       tab_projects: "Dự án",
@@ -287,7 +287,7 @@ Contact: Lequyphat0123@gmail.com | WhatsApp: 0862893442
 Website: lequyphat.wuaze.com
 
 Summary:
-Data Analyst with 4 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
+Data Professional with 4 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
 
 FAQ:
 - How did you gain 4 years of experience while studying?
