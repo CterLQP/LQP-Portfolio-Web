@@ -301,16 +301,18 @@ export default function Home() {
                 {t.exp_ghn_desc3 && <li>{t.exp_ghn_desc3}</li>}
               </ul>
             </div>
-            <div className="timeline-item reveal" style={{ transitionDelay: "0.2s" }}>
-              <div className="timeline-date">{t.exp3_date}</div>
-              <h3 className="timeline-title">{t.exp3_company}</h3>
-              <p className="timeline-pos">{t.exp3_position}</p>
-              <ul className="timeline-desc">
-                <li>{t.exp3_desc1}</li>
-                <li>{t.exp3_desc2}</li>
-                {t.exp3_desc3 && <li>{t.exp3_desc3}</li>}
-              </ul>
-            </div>
+            {t.exp3_company && (
+              <div className="timeline-item reveal" style={{ transitionDelay: "0.2s" }}>
+                <div className="timeline-date">{t.exp3_date}</div>
+                <h3 className="timeline-title">{t.exp3_company}</h3>
+                <p className="timeline-pos">{t.exp3_position}</p>
+                <ul className="timeline-desc">
+                  <li>{t.exp3_desc1}</li>
+                  <li>{t.exp3_desc2}</li>
+                  {t.exp3_desc3 && <li>{t.exp3_desc3}</li>}
+                </ul>
+              </div>
+            )}
             <div className="timeline-item reveal" style={{ transitionDelay: "0.3s" }}>
               <div className="timeline-date">{t.exp2_date}</div>
               <h3 className="timeline-title">{t.exp2_company}</h3>

@@ -43,9 +43,9 @@ export const translations = {
       exp_ghn_date: "Mar 2026 - Present",
       exp_ghn_company: "Giao Hàng Nhanh",
       exp_ghn_position: "Processing & Data Analyst Specialist",
-      exp_ghn_desc1: "Implement the Employee Engagement Survey project, collect and analyze data, and provide necessary insights for management.",
-      exp_ghn_desc2: "Improve processes: Analyze recruitment data from the Bitrix system, centralize recruitment processes into BigQuery to optimize dashboard management and provide weekly/monthly performance reports.",
-      exp_ghn_desc3: "",
+      exp_ghn_desc1: "Delivered recruitment performance dashboards for 14 regions and 4 Sorting Centres, and built an automated data pipeline using Google Apps Script to sync Bitrix24 CRM data into BigQuery.",
+      exp_ghn_desc2: "Led the Employee Engagement Survey (EES) data project for 21,300+ employees, achieving a 93.7% completion rate and developing analytical dashboards for management.",
+      exp_ghn_desc3: "Deployed internal tools including a Bitrix automation bot (FastAPI), an employee psychology monitoring system, and a survey application (React + Vite).",
       
       project_ghn_title: "[Python] HR & Ops Analytics Dashboard",
       tag_ibcs: "IBCS",
@@ -81,18 +81,18 @@ export const translations = {
       exp1_desc1: "",
       exp1_desc2: "",
       exp1_desc3: "",
-      exp2_date: "Jul 2023 - Dec 2024",
+      exp2_date: "Dec 2021 - Dec 2025",
       exp2_company: "Parsley JSC",
       exp2_position: "Data Analyst",
-      exp2_desc1: "Standardized multi-source raw data by defining cross-departmental requirements for streamlined reporting.",
-      exp2_desc2: "Automated ETL workflows using Python scripts to support revenue forecasting and customer reach analysis.",
-      exp2_desc3: "Optimized data models for Power BI and Looker Studio dashboards, enhancing query performance and data accuracy.",
-      exp3_date: "Mar 2025 - Dec 2025",
-      exp3_company: "International Data Group Vietnam",
-      exp3_position: "Data Analyst",
-      exp3_desc1: "Managed end-to-end data collection for major events, ensuring data integrity from survey input to final reporting.",
-      exp3_desc2: "Executed data cleansing and validation on large attendee datasets to identify anomalies and optimize analysis accuracy.",
-      exp3_desc3: "Synchronized digital content across platforms to ensure data consistency and accurate event communication flow.",
+      exp2_desc1: "Built and maintained integrated ETL pipelines from 6+ e-commerce platforms, contributing to a 200% revenue growth from 2023 to 2024.",
+      exp2_desc2: "Managed data collection and validation for major B2B events, processing datasets of ~70,000 records with high accuracy.",
+      exp2_desc3: "Optimized Power BI and Looker Studio data models to improve query performance, and collaborated with cross-functional teams to standardize reporting.",
+      exp3_date: "",
+      exp3_company: "",
+      exp3_position: "",
+      exp3_desc1: "",
+      exp3_desc2: "",
+      exp3_desc3: "",
       edu_school: "Hoa Sen University",
       edu_time: "2021 - 2025",
       edu_degree: "Management Information Systems",
@@ -184,9 +184,9 @@ export const translations = {
       exp_ghn_date: "Tháng 3 2026 - Hiện tại",
       exp_ghn_company: "Giao Hàng Nhanh",
       exp_ghn_position: "Chuyên viên Phân tích Quy trình và Dữ liệu",
-      exp_ghn_desc1: "Thực hiện dự án Khảo sát mức độ gắn kết của nhân viên, thu thập và phân tích dữ liệu, cung cấp thông tin chi tiết cần thiết cho ban quản lý.",
-      exp_ghn_desc2: "Cải tiến quy trình: Phân tích dữ liệu tuyển dụng từ hệ thống Bitrix, tập trung hóa quy trình tuyển dụng vào BigQuery để tối ưu quản lý dashboard và cung cấp báo cáo hiệu suất hàng tuần/tháng.",
-      exp_ghn_desc3: "",
+      exp_ghn_desc1: "Triển khai hệ thống báo cáo hiệu suất tuyển dụng cho 14 khu vực và 4 trung tâm phân loại, đồng thời xây dựng luồng dữ liệu tự động đồng bộ từ Bitrix24 CRM sang BigQuery.",
+      exp_ghn_desc2: "Dẫn dắt dự án Khảo sát mức độ gắn kết của nhân viên (EES) cho hơn 21.300 nhân sự, đạt tỷ lệ hoàn thành 93,7% và phát triển báo cáo phân tích cho ban quản lý.",
+      exp_ghn_desc3: "Phát triển các công cụ nội bộ như bot tự động hóa Bitrix (FastAPI), hệ thống theo dõi tâm lý nhân viên và ứng dụng khảo sát (React + Vite).",
       
       project_ghn_title: "[Python] Bảng điều khiển Phân tích Nhân sự & Vận hành",
       tag_ibcs: "IBCS",
@@ -222,18 +222,18 @@ export const translations = {
       exp1_desc1: "",
       exp1_desc2: "",
       exp1_desc3: "",
-      exp2_date: "Tháng 7 2023 - Tháng 12 2024",
+      exp2_date: "Tháng 12 2021 - Tháng 12 2025",
       exp2_company: "Parsley JSC",
       exp2_position: "Chuyên viên Phân tích Dữ liệu",
-      exp2_desc1: "Chuẩn hóa dữ liệu thô từ nhiều nguồn bằng cách xác định các yêu cầu liên phòng ban để hợp lý hóa việc báo cáo.",
-      exp2_desc2: "Tự động hóa luồng công việc ETL bằng các tập lệnh Python để hỗ trợ dự báo doanh thu và phân tích phạm vi tiếp cận khách hàng.",
-      exp2_desc3: "Tối ưu hóa mô hình dữ liệu cho các dashboard Power BI và Looker Studio, nâng cao hiệu suất truy vấn và độ chính xác của dữ liệu.",
-      exp3_date: "Tháng 3 2025 - Tháng 12 2025",
-      exp3_company: "International Data Group Vietnam",
-      exp3_position: "Chuyên viên Phân tích Dữ liệu",
-      exp3_desc1: "Quản lý việc thu thập dữ liệu từ đầu đến cuối cho các sự kiện lớn, đảm bảo tính toàn vẹn của dữ liệu từ đầu vào khảo sát đến báo cáo cuối cùng.",
-      exp3_desc2: "Thực hiện làm sạch và xác thực dữ liệu trên các tập dữ liệu người tham dự lớn để xác định các điểm bất thường và tối ưu hóa độ chính xác của phân tích.",
-      exp3_desc3: "Đồng bộ hóa nội dung kỹ thuật số trên các nền tảng để đảm bảo tính nhất quán của dữ liệu và luồng giao tiếp sự kiện chính xác.",
+      exp2_desc1: "Xây dựng và duy trì luồng dữ liệu ETL tích hợp từ hơn 6 nền tảng thương mại điện tử, góp phần tăng trưởng 200% doanh thu trong năm 2023-2024.",
+      exp2_desc2: "Quản lý việc thu thập và xác thực dữ liệu cho các sự kiện B2B lớn, xử lý các tập dữ liệu khoảng 70.000 bản ghi với tiêu chuẩn độ chính xác cao.",
+      exp2_desc3: "Tối ưu hóa các mô hình dữ liệu Power BI và Looker Studio để nâng cao hiệu suất truy vấn, phối hợp với các phòng ban để chuẩn hóa hệ thống báo cáo.",
+      exp3_date: "",
+      exp3_company: "",
+      exp3_position: "",
+      exp3_desc1: "",
+      exp3_desc2: "",
+      exp3_desc3: "",
       edu_school: "Đại học Hoa Sen",
       edu_time: "2021 - 2025",
       edu_degree: "Hệ thống Thông tin Quản lý",
@@ -287,26 +287,22 @@ Contact: Lequyphat0123@gmail.com | WhatsApp: 0862893442
 Website: lequyphat.wuaze.com
 
 Summary:
-Data Analyst with nearly 2 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
+Data Analyst with 4 years of experience, driven by a dual passion for Data Science and Artificial Intelligence. Currently working at Giao Hàng Nhanh as a Processing & Data Analyst Specialist. I specialize in transforming complex datasets into strategic assets using Python, SQL, and automated ETL pipelines. With a proven track record, I design scalable data models and intuitive BI dashboards that not only track performance but predict future trends to unlock revenue growth.
 
 FAQ:
-- How did you gain 2 years of experience while studying?
-  I started my career early during my sophomore year (2nd year of university). By balancing flexible work schedules with academic studies and applying classroom knowledge directly to real-world projects at Parsley and IDG, I effectively accumulated nearly 2 years of professional experience before graduation.
+- How did you gain 4 years of experience while studying?
+  I started my career early during my freshman year. By balancing flexible work schedules with academic studies and applying classroom knowledge directly to real-world projects at Parsley, I effectively accumulated 4 years of professional experience before graduation.
 
 Experience:
-1. Giao Hang Nhanh JSC - Processing & Data Analyst Specialist (Mar 2026 - Present)
-   - Implement the Employee Engagement Survey project, collect and analyze data, and provide necessary insights for management.
-   - Improve processes: Analyze recruitment data from the Bitrix system, centralize recruitment processes into BigQuery to optimize dashboard management and provide weekly/monthly performance reports.
+1. Giao Hàng Nhanh - Processing & Data Analyst Specialist (Mar 2026 - Present)
+   - Delivered recruitment performance dashboards and built an automated data pipeline using Google Apps Script to sync Bitrix24 CRM data into BigQuery.
+   - Led the Employee Engagement Survey (EES) project for 21,300+ employees, achieving a 93.7% completion rate.
+   - Deployed internal tools including a Bitrix automation bot (FastAPI) and an employee survey application (React + Vite).
 
-2. International Data Group Vietnam - Data Analyst (Mar 2025 - Dec 2025)
-   - Managed end-to-end data collection for major events, ensuring data integrity from survey input to final reporting.
-   - Executed data cleansing and validation on large attendee datasets to identify anomalies and optimize analysis accuracy.
-   - Synchronized digital content across platforms to ensure data consistency and accurate event communication flow.
-
-3. Parsley JSC - Data Analyst (Jul 2023 - Dec 2024)
-   - Standardized multi-source raw data by defining cross-departmental requirements for streamlined reporting.
-   - Automated ETL workflows using Python scripts to support revenue forecasting and customer reach analysis.
-   - Optimized data models for Power BI and Looker Studio dashboards, enhancing query performance and data accuracy.
+2. Parsley JSC - Data Analyst (Dec 2021 - Dec 2025)
+   - Built integrated ETL pipelines from 6+ e-commerce platforms, contributing to 200% revenue growth (2023-2024).
+   - Managed data collection for major B2B events, processing datasets of ~70,000 records.
+   - Optimized Power BI/Looker Studio data models and collaborated cross-functionally to standardize reporting.
 
 Skills:
 - Programming & Databases: Python, SQL, HTML/CSS, JavaScript.
