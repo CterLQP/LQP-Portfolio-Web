@@ -16,7 +16,7 @@ export async function POST(req) {
         'Authorization': `Bearer ${GROQ_API_KEY}`
       },
       body: JSON.stringify({
-        model: "llama-3.1-8b-instant",
+        model: "qwen-2.5-32b",
         messages: [
           { role: "system", content: systemInstruction },
           { role: "user", content: message }

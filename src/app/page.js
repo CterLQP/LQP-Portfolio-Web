@@ -10,7 +10,7 @@ export default function Home() {
   const [activeModal, setActiveModal] = useState(null);
   const [chatOpen, setChatOpen] = useState(false);
   const [chatMessages, setChatMessages] = useState([
-    { role: "bot", content: "Hello! 👋 I'm Titus's AI assistant. Ask me anything about his experience, projects, or skills!" }
+    { role: "bot", content: "Hello! I'm Titus's AI assistant. Ask me anything about his experience, projects, or skills!" }
   ]);
   const [chatInput, setChatInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
