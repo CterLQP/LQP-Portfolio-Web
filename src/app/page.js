@@ -694,7 +694,7 @@ export default function Home() {
             {chatMessages.length === 1 && !isTyping && (
               <div className="quick-replies" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '10px', marginLeft: '10px' }}>
                 <button onClick={() => handleSendMessage("What are your core skills?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Core Skills?</button>
-                <button onClick={() => handleSendMessage("Tell me about your experience at Giao Hàng Nhanh.")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Experience at Giao Hàng Nhanh?</button>
+                <button onClick={() => handleSendMessage("Tell me about your experience at Giao Hang Nhanh.")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Experience at Giao Hang Nhanh?</button>
                 <button onClick={() => handleSendMessage("How can I contact you?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Contact info?</button>
               </div>
             )}

@@ -41,7 +41,7 @@ export const translations = {
       popup_back_btn: "Back", 
       
       exp_ghn_date: "Mar 2026 - Present",
-      exp_ghn_company: "Giao Hàng Nhanh",
+      exp_ghn_company: "Giao Hang Nhanh",
       exp_ghn_position: "Processing & Data Analyst Specialist",
       exp_ghn_desc1: "Delivered recruitment performance dashboards for 14 regions and 4 Sorting Centres, and built an automated data pipeline using Google Apps Script to sync Bitrix24 CRM data into BigQuery.",
       exp_ghn_desc2: "Led the Employee Engagement Survey (EES) data project for 21,300+ employees, achieving a 93.7% completion rate and developing analytical dashboards for management.",
