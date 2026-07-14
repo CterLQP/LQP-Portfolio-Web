@@ -32,7 +32,7 @@ export default function Home() {
   // intersection observer for .reveal
   useEffect(() => {
     const savedLang = localStorage.getItem('language') || 'en';
-    setLang(savedLang);
+    setTimeout(() => setLang(savedLang), 0);
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -77,12 +77,18 @@ export default function Home() {
 
   const handleModalOpen = (id) => {
     setActiveModal(id);
-    document.body.style.overflow = 'hidden';
   };
   const handleModalClose = () => {
     setActiveModal(null);
-    document.body.style.overflow = '';
   };
+
+  useEffect(() => {
+    if (activeModal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [activeModal]);
 
   // Chat logic
   const handleSendMessage = async (textOverride) => {
