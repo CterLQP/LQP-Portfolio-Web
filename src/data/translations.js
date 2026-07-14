@@ -81,13 +81,13 @@ export const translations = {
       exp1_desc1: "",
       exp1_desc2: "",
       exp1_desc3: "",
-      exp2_date: "Dec 2021 - Dec 2024",
+      exp2_date: "Jul 2023 - Dec 2024",
       exp2_company: "Parsley Joint Stock Company",
       exp2_position: "Data Analyst",
       exp2_desc1: "Built and maintained integrated ETL pipelines from 6+ e-commerce platforms, contributing to a 200% revenue growth from 2023 to 2024.",
       exp2_desc2: "Collaborated with Operations, Commercial and Marketing teams to identify cross-departmental data requirements and provide consistent reporting standards.",
       exp2_desc3: "Optimized Power BI and Looker Studio data models to improve query performance and data accuracy.",
-      exp3_date: "Mar 2025 - Jul 2025",
+      exp3_date: "Mar 2025 - Dec 2025",
       exp3_company: "International Data Group Vietnam",
       exp3_position: "Data Analyst",
       exp3_desc1: "Managed data collection and validation for two major B2B events, processing datasets of ~70,000 records per event with high accuracy.",
@@ -222,13 +222,13 @@ export const translations = {
       exp1_desc1: "",
       exp1_desc2: "",
       exp1_desc3: "",
-      exp2_date: "Tháng 12 2021 - Tháng 12 2024",
+      exp2_date: "Tháng 7 2023 - Tháng 12 2024",
       exp2_company: "Parsley Joint Stock Company",
       exp2_position: "Chuyên viên Phân tích Dữ liệu",
       exp2_desc1: "Xây dựng và duy trì luồng dữ liệu ETL tích hợp từ hơn 6 nền tảng thương mại điện tử, góp phần tăng trưởng 200% doanh thu trong năm 2023-2024.",
       exp2_desc2: "Phối hợp với các nhóm Vận hành, Thương mại và Tiếp thị để xác định yêu cầu dữ liệu liên phòng ban và cung cấp tiêu chuẩn báo cáo nhất quán.",
       exp2_desc3: "Tối ưu hóa các mô hình dữ liệu Power BI và Looker Studio để nâng cao hiệu suất truy vấn và độ chính xác của dữ liệu.",
-      exp3_date: "Tháng 3 2025 - Tháng 7 2025",
+      exp3_date: "Tháng 3 2025 - Tháng 12 2025",
       exp3_company: "International Data Group Vietnam",
       exp3_position: "Chuyên viên Phân tích Dữ liệu",
       exp3_desc1: "Quản lý việc thu thập và xác thực dữ liệu cho 2 sự kiện B2B lớn, xử lý các tập dữ liệu khoảng 70.000 bản ghi mỗi sự kiện với tiêu chuẩn độ chính xác cao.",
@@ -299,11 +299,11 @@ Experience:
    - Led the Employee Engagement Survey (EES) project for 21,300+ employees, achieving a 93.7% completion rate.
    - Deployed internal tools including a Bitrix automation bot (FastAPI) and an employee survey application (React + Vite).
 
-2. International Data Group Vietnam - Data Analyst (Mar 2025 - Jul 2025)
+2. International Data Group Vietnam - Data Analyst (Mar 2025 - Dec 2025)
    - Managed data collection and validation for major B2B events, processing datasets of ~70,000 records.
    - Implemented end-to-end data cleaning processes to ensure data integrity.
 
-3. Parsley Joint Stock Company - Data Analyst (Dec 2021 - Dec 2024)
+3. Parsley Joint Stock Company - Data Analyst (Jul 2023 - Dec 2024)
    - Built integrated ETL pipelines from 6+ e-commerce platforms, contributing to 200% revenue growth (2023-2024).
    - Collaborated with cross-functional teams to identify requirements and provide consistent reporting standards.
    - Optimized Power BI/Looker Studio data models to improve query performance and accuracy.

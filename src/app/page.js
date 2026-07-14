@@ -14,6 +14,7 @@ export default function Home() {
   ]);
   const [chatInput, setChatInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   // Easter egg states
   const [eeQuoteClicks, setEeQuoteClicks] = useState(0);
@@ -354,160 +355,123 @@ export default function Home() {
           <div className="section-header reveal">
             <h2 className="section-title">{t.projects_header}</h2>
           </div>
+          
+          {/* Project Filter Bar */}
+          <div className="project-filter-bar reveal">
+            {["All", "Python & ML", "Power BI", "Others"].map((category) => (
+              <button
+                key={category}
+                className={`filter-btn ${selectedCategory === category ? "active" : ""}`}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
           <div className="projects-grid">
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg" className="project-img" alt="HR Dashboard" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project_ghn_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_python}</span>
-                  <span className="tag">{t.tag_streamlit}</span>
-                  <span className="tag">{t.tag_ibcs}</span>
-                  <span className="tag">{t.tag_ml}</span>
+            {[
+              {
+                id: "desc-project-ghn",
+                title: t.project_ghn_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg",
+                tags: [t.tag_python, t.tag_streamlit, t.tag_ibcs, t.tag_ml],
+                category: "Python & ML",
+                codeUrl: "https://ghn-executive-dashboard.streamlit.app/",
+                codeLabel: t.project_view_code
+              },
+              {
+                id: "desc-project-avocado",
+                title: t.project_avocado_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg",
+                tags: [t.tag_python, t.tag_streamlit, t.tag_ml],
+                category: "Python & ML",
+                codeUrl: "https://avocado-analytics-lqp.streamlit.app/",
+                codeLabel: t.project_view_code
+              },
+              {
+                id: "desc-project-athens",
+                title: t.project_athens_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg",
+                tags: [t.tag_python, t.tag_streamlit, t.tag_ml],
+                category: "Python & ML",
+                codeUrl: "https://athens-airbnb-analysis.streamlit.app",
+                codeLabel: t.project_view_code
+              },
+              {
+                id: "desc-project7",
+                title: t.project7_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769198128/LQP/Powerbi_gljqff.jpg",
+                tags: [t.tag_powerbi],
+                category: "Power BI",
+                codeUrl: "https://drive.google.com/drive/folders/1Vl2ZvRNiYBN_cBVNUecxlK2h0BOg138u?usp=sharing",
+                codeLabel: t.project_view_report
+              },
+              {
+                id: "desc-project6",
+                title: t.project6_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769198128/LQP/Powerbi_gljqff.jpg",
+                tags: [t.tag_powerbi],
+                category: "Power BI",
+                codeUrl: "https://drive.google.com/drive/folders/1C4c6WWYiWzzQYoZ__1zdvb9ApcY04tqn?usp=sharing",
+                codeLabel: t.project_view_report
+              },
+              {
+                id: "desc-project5",
+                title: t.project5_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769198128/LQP/Powerbi_gljqff.jpg",
+                tags: [t.tag_powerbi],
+                category: "Power BI",
+                codeUrl: "https://drive.google.com/file/d/1WxB_n0SpW858Ex0HDPOoc4abrdDvKgFZ/view?usp=sharing",
+                codeLabel: t.project_view_report
+              },
+              {
+                id: "desc-project4",
+                title: t.project4_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199597/LQP/python-jupyter_notebook_jgtcqf.png",
+                tags: [t.tag_python, t.tag_ml],
+                category: "Python & ML",
+                codeUrl: "https://github.com/LQP-CTER/Data-Mining",
+                codeLabel: t.project_view_code
+              },
+              {
+                id: "desc-project8",
+                title: t.project8_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199597/LQP/Python_cshp0h.png",
+                tags: [t.tag_python, t.tag_tkinter],
+                category: "Python & ML",
+                codeUrl: "https://github.com/LQP-CTER/Inventory-Management-System/tree/main",
+                codeLabel: t.project_view_code
+              },
+              {
+                id: "desc-project3",
+                title: t.project3_title,
+                img: "https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg",
+                tags: [t.tag_ai_ml, t.tag_streamlit],
+                category: "Python & ML",
+                codeUrl: "https://track-gold-trend.streamlit.app",
+                codeLabel: t.project_view_code
+              }
+            ].filter(p => selectedCategory === "All" || p.category === selectedCategory).map((project, index) => (
+              <div className="project-card reveal fade-in" key={index}>
+                <div className="project-img-wrapper">
+                  <img src={project.img} className="project-img" alt={project.title} loading="lazy" />
                 </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project-ghn")}>{t.project_view_desc}</button>
-                  <a href="https://ghn-executive-dashboard.streamlit.app/" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_code}</a>
+                <div className="project-content">
+                  <h3 className="project-title">{project.title}</h3>
+                  <div className="project-tags">
+                    {project.tags.map(tag => (
+                      <span className="tag" key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                  <div className="project-actions">
+                    <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen(project.id)}>{t.project_view_desc}</button>
+                    <a href={project.codeUrl} target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{project.codeLabel}</a>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
 
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg" className="project-img" alt="Avocado Analyst" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project_avocado_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_python}</span>
-                  <span className="tag">{t.tag_streamlit}</span>
-                  <span className="tag">{t.tag_ml}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project-avocado")}>{t.project_view_desc}</button>
-                  <a href="https://avocado-analytics-lqp.streamlit.app/" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_code}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg" className="project-img" alt="Athens Airbnb" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project_athens_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_python}</span>
-                  <span className="tag">{t.tag_streamlit}</span>
-                  <span className="tag">{t.tag_ml}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project-athens")}>{t.project_view_desc}</button>
-                  <a href="https://athens-airbnb-analysis.streamlit.app" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_code}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769198128/LQP/Powerbi_gljqff.jpg" className="project-img" alt="Sales" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project7_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_powerbi}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project7")}>{t.project_view_desc}</button>
-                  <a href="https://drive.google.com/drive/folders/1Vl2ZvRNiYBN_cBVNUecxlK2h0BOg138u?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_report}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769198128/LQP/Powerbi_gljqff.jpg" className="project-img" alt="Inventory" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project6_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_powerbi}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project6")}>{t.project_view_desc}</button>
-                  <a href="https://drive.google.com/drive/folders/1C4c6WWYiWzzQYoZ__1zdvb9ApcY04tqn?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_report}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769198128/LQP/Powerbi_gljqff.jpg" className="project-img" alt="Corporate" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project5_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_powerbi}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project5")}>{t.project_view_desc}</button>
-                  <a href="https://drive.google.com/file/d/1WxB_n0SpW858Ex0HDPOoc4abrdDvKgFZ/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_report}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199597/LQP/python-jupyter_notebook_jgtcqf.png" className="project-img" alt="ML" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project4_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_python}</span>
-                  <span className="tag">{t.tag_ml}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project4")}>{t.project_view_desc}</button>
-                  <a href="https://github.com/LQP-CTER/Data-Mining" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_code}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199597/LQP/Python_cshp0h.png" className="project-img" alt="IMS" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project8_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_python}</span>
-                  <span className="tag">{t.tag_tkinter}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project8")}>{t.project_view_desc}</button>
-                  <a href="https://github.com/LQP-CTER/Inventory-Management-System/tree/main" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_code}</a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="project-card reveal">
-              <div className="project-img-wrapper">
-                <img src="https://res.cloudinary.com/dd7gti2kn/image/upload/v1769199596/LQP/python_-_streamlit_zurspu.jpg" className="project-img" alt="Gold" loading="lazy" />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{t.project3_title}</h3>
-                <div className="project-tags">
-                  <span className="tag">{t.tag_ai_ml}</span>
-                  <span className="tag">{t.tag_streamlit}</span>
-                </div>
-                <div className="project-actions">
-                  <button className="btn btn-sm btn-outline" onClick={() => handleModalOpen("desc-project3")}>{t.project_view_desc}</button>
-                  <a href="https://track-gold-trend.streamlit.app" target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">{t.project_view_code}</a>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
