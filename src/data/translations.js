@@ -139,6 +139,14 @@ export const translations = {
       desc_p3_title: "Project Description",
       desc_p3_content_p1: "This project is an interactive web application built using Streamlit and Python. It fetches historical gold price data, visualizes trends over time, and applies machine learning models (such as time series forecasting with ARIMA or Prophet) to predict future price movements.",
       desc_p3_content_p2: "The application allows users to interact with the charts and see potential future trends, demonstrating skills in data visualization, web app development with Streamlit, and applying ML for time series analysis.",
+      chat_greeting: "Hello! I'm Titus's AI assistant. Ask me anything about his experience, projects, or skills!",
+      chat_title: "Titus AI Assistant",
+      chat_placeholder: "Ask a question...",
+      chat_quick_skills: "Core Skills?",
+      chat_quick_exp: "Experience at Giao Hang Nhanh?",
+      chat_quick_contact: "Contact info?",
+      footer_text: "© 2026 Le Quy Phat. Built with passion for Data & AI.",
+      contact_whatsapp: "WhatsApp Me",
   },
   vi: {
       top_bar_title: "Hồ sơ năng lực",
@@ -276,6 +284,18 @@ export const translations = {
       desc_p3_title: "Mô tả Dự án",
       desc_p3_content_p1: "Dự án này là một ứng dụng web tương tác được xây dựng bằng Streamlit và Python. Nó lấy dữ liệu lịch sử giá vàng, trực quan hóa các xu hướng theo thời gian và áp dụng các mô hình học máy (như dự báo chuỗi thời gian với ARIMA hoặc Prophet) để dự đoán các biến động giá trong tương lai.",
       desc_p3_content_p2: "Ứng dụng cho phép người dùng tương tác với biểu đồ và xem các xu hướng tiềm năng trong tương lai, thể hiện kỹ năng trực quan hóa dữ liệu, phát triển ứng dụng web với Streamlit và áp dụng ML để phân tích chuỗi thời gian.",
+      popup_title_desc_athens: "Phân tích thị trường Athens - Mô tả",
+      desc_athens_title: "Mô tả Dự án",
+      desc_athens_content_p1: "Một bảng điều khiển phân tích dữ liệu toàn diện được xây dựng bằng Streamlit và Python để khám phá thị trường Airbnb ở Athens. Dự án bao gồm việc làm sạch dữ liệu thô, thiết kế đặc trưng (tính khoảng cách đến trung tâm thành phố) và thực hiện phân tích dữ liệu khám phá (EDA) trên danh sách, giá cả và hành vi của chủ nhà.",
+      desc_athens_content_p2: "Các tính năng nâng cao bao gồm phân cụm K-Means để nhóm danh sách dựa trên vị trí và giá cả, phân tích NLP về mô tả danh sách để xác định từ khóa thúc đẩy giá trị và mô hình học máy Random Forest để dự đoán giá thuê bằng công cụ dự đoán tương tác trực tiếp.",
+      chat_greeting: "Xin chào! Tôi là trợ lý AI của Titus. Hãy hỏi tôi bất cứ điều gì về kinh nghiệm, dự án hoặc kỹ năng của anh ấy!",
+      chat_title: "Trợ lý AI Titus",
+      chat_placeholder: "Đặt câu hỏi...",
+      chat_quick_skills: "Kỹ năng cốt lõi?",
+      chat_quick_exp: "Kinh nghiệm tại Giao Hang Nhanh?",
+      chat_quick_contact: "Thông tin liên hệ?",
+      footer_text: "© 2026 Lê Quý Phát. Được xây dựng với niềm đam mê dành cho Dữ liệu & AI.",
+      contact_whatsapp: "Nhắn tin WhatsApp",
   }
 };
 

@@ -10,7 +10,7 @@ export default function Home() {
   const [activeModal, setActiveModal] = useState(null);
   const [chatOpen, setChatOpen] = useState(false);
   const [chatMessages, setChatMessages] = useState([
-    { role: "bot", content: "Hello! I'm Titus's AI assistant. Ask me anything about his experience, projects, or skills!" }
+    { role: "bot", content: "", isGreeting: true }
   ]);
   const [chatInput, setChatInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -530,7 +530,7 @@ export default function Home() {
             </div>
             <div className="contact-item">
               <i className="fa-brands fa-whatsapp"></i>
-              <a href="https://wa.me/0862893442" target="_blank" rel="noreferrer">WhatsApp Me</a>
+              <a href="https://wa.me/0862893442" target="_blank" rel="noreferrer">{t.contact_whatsapp}</a>
             </div>
             <div className="contact-item">
               <i className="fa-solid fa-location-dot"></i>
@@ -548,7 +548,7 @@ export default function Home() {
 
       <footer>
         <div className="container">
-          <p>&copy; 2026 Le Quy Phat. Built with passion for Data & AI.</p>
+          <p>{t.footer_text}</p>
         </div>
       </footer>
 
@@ -678,13 +678,13 @@ export default function Home() {
         <div className={`chat-window ${chatOpen ? 'active' : ''}`}>
           <div className="chat-header">
             <span className="chat-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <img src="/ai-logo.png" alt="AI" style={{ width: '20px', height: '20px', objectFit: 'cover', borderRadius: '50%' }} /> Titus AI Assistant
+              <img src="/ai-logo.png" alt="AI" style={{ width: '20px', height: '20px', objectFit: 'cover', borderRadius: '50%' }} /> {t.chat_title}
             </span>
             <button className="chat-close" onClick={() => setChatOpen(false)}><i className="fa-solid fa-xmark"></i></button>
           </div>
           <div className="chat-messages" id="chat-messages">
             {chatMessages.map((msg, idx) => (
-              <div key={idx} className={`message ${msg.role === 'user' ? 'user' : 'bot'}`} dangerouslySetInnerHTML={{ __html: msg.content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>') }}></div>
+              <div key={idx} className={`message ${msg.role === 'user' ? 'user' : 'bot'}`} dangerouslySetInnerHTML={{ __html: (msg.isGreeting ? t.chat_greeting : msg.content).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>') }}></div>
             ))}
             {isTyping && (
               <div className="message bot typing-indicator">
@@ -693,9 +693,9 @@ export default function Home() {
             )}
             {chatMessages.length === 1 && !isTyping && (
               <div className="quick-replies" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '10px', marginLeft: '10px' }}>
-                <button onClick={() => handleSendMessage("What are your core skills?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Core Skills?</button>
-                <button onClick={() => handleSendMessage("Tell me about your experience at Giao Hang Nhanh.")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Experience at Giao Hang Nhanh?</button>
-                <button onClick={() => handleSendMessage("How can I contact you?")} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>Contact info?</button>
+                <button onClick={() => handleSendMessage(t.chat_quick_skills)} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>{t.chat_quick_skills}</button>
+                <button onClick={() => handleSendMessage(t.chat_quick_exp)} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>{t.chat_quick_exp}</button>
+                <button onClick={() => handleSendMessage(t.chat_quick_contact)} style={{ fontSize: '12px', padding: '6px 12px', borderRadius: '15px', border: '1px solid var(--accent)', background: 'transparent', color: 'var(--accent)', cursor: 'pointer', transition: 'all 0.2s' }}>{t.chat_quick_contact}</button>
               </div>
             )}
           </div>
@@ -703,7 +703,7 @@ export default function Home() {
             <input 
               type="text" 
               className="chat-input" 
-              placeholder="Ask a question..." 
+              placeholder={t.chat_placeholder} 
               value={chatInput} 
               onChange={(e) => setChatInput(e.target.value)} 
               onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()} 
