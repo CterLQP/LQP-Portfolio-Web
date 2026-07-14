@@ -667,12 +667,12 @@ export default function Home() {
       <div className="chat-widget-container">
         {!chatOpen && <div className="chat-tooltip" id="chat-tooltip">{t.dock_chat_tooltip}</div>}
         <button className="chat-toggle-btn" onClick={() => setChatOpen(!chatOpen)} style={{ overflow: 'hidden', padding: '10px' }}>
-          <img src="/dark-angel-logo.png" alt="AI Chat" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />
+          <img src="/ai-logo.png" alt="AI Chat" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
         </button>
         <div className={`chat-window ${chatOpen ? 'active' : ''}`}>
           <div className="chat-header">
             <span className="chat-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <img src="/dark-angel-logo.png" alt="AI" style={{ width: '20px', height: '20px', objectFit: 'contain', borderRadius: '50%' }} /> Titus AI Assistant
+              <img src="/ai-logo.png" alt="AI" style={{ width: '20px', height: '20px', objectFit: 'cover', borderRadius: '50%' }} /> Titus AI Assistant
             </span>
             <button className="chat-close" onClick={() => setChatOpen(false)}><i className="fa-solid fa-xmark"></i></button>
           </div>
